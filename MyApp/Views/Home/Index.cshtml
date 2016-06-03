@@ -1,0 +1,86 @@
+﻿@using MyApp.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="~/Content/IMG/myCarousel1 (1).jpg" alt="Missing image">
+                </div>
+
+                <div class="item">
+                    <img src="~/Content/IMG/myCarousel1 (1).png" alt="Missing image">
+                </div>
+
+                <div class="item">
+                    <img src="~/Content/IMG/myCarousel1 (2).jpg" alt="Missing image">
+                </div>                
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+<div class="row">
+    <div class="col-md-4" style="background-color: white">
+        <h2>Кафедра МОКС </h2>
+        
+        <p>В составе кафедры 18 преподавателей в том числе:</p>
+        <p> - докторов наук, профессоров - 2;</p>
+        <p> - кандидатов наук - 10;</p>
+        <p> - старших преподавателей - 4,</p>
+        <p> - ассистентов – 2</p>
+        
+        <p><a class="btn btn-default btn" href="http://kafedramoks.wix.com/onu-imem-moks">Сайт кафедры &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
